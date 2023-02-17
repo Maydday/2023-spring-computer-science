@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 
-#include <cli.h>
+#include "cli.h" //ошибка, так как файл находится в другом каталоге
 
 int main(int argc, char* argv[]) {
   if (argc < 2) {
