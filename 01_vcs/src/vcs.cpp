@@ -13,6 +13,8 @@
 #include <unistd.h>
 #include <sys/stat.h>
 
+#include <iomanip>  // для std::setfill, std::setw
+
 #include "vcs.h"
 
 namespace fs = std::filesystem;
