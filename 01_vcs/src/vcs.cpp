@@ -95,9 +95,18 @@ std::unordered_map<std::string, std::string> create_snapshot() {
 
   auto hashes_log_file_path = fs::path(snapshot_dir) / std::string("hashes.log");
   std::ofstream hashes_log_file(hashes_log_file_path);
+  
+ /* 
   for (const auto &[file, hash] : file_hashes) {
     hashes_log_file << file << ' ' << hash << '\n';
   }
+  */
+  
+  for(const auto& lll : file_hashes) {
+  hashes_log_file << lll.first << ' ' << lll.second << '\n';  //это версия для более старого компилятора
+  }
+  
+  
   hashes_log_file.close();
 
   return file_hashes;
