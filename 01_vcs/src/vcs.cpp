@@ -4,14 +4,14 @@
 #include <iostream>
 #include <fstream>
 // #include <string> //это лишнее, так как string берём в #include "vcs.h"
-#include <vector>
-#include <algorithm>
-#include <chrono>
-#include <cstring>
-#include <dirent.h>
-#include <sstream>
-#include <unistd.h>
-#include <sys/stat.h>
+//#include <vector>
+//#include <algorithm>
+//#include <chrono>          //нигде не используются
+//#include <cstring>
+//#include <dirent.h>
+//#include <sstream>
+//#include <unistd.h>
+//#include <sys/stat.h>
 
 #include <iomanip>  // для std::setfill, std::setw
 
